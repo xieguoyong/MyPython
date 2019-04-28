@@ -239,9 +239,34 @@
 #
 #
 
-str1 = "this is string example....wow!!!"
-str2 = "exam"
+# import requests  # 导入requests 模块
+# from bs4 import BeautifulSoup  # 导入BeautifulSoup 模块
+# from selenium import webdriver  # 导入Selenium的webdriver
+# from selenium.common.exceptions import TimeoutException
+#
+# driver = webdriver.Chrome()
+# driver.set_page_load_timeout(10)
+# driver.set_script_timeout(10)
+#
+#
+# def get_url():
+#     try:
+#         re = requests.get('http://tieba.baidu.com/p/6112839021')
+#     except TimeoutException:
+#         print("页面加载超时，强行结束加载！")
+#         # driver.execute_script('window.stop()')  # 执行超时强行结束加载的js
+#     else:
+#         return re.text
+#
+# def get_lxml():
+#     soup = BeautifulSoup(get_url(), 'lxml')
+#     img_title = soup.find('h1', class_='core_title_txt')['title']
+#     print(img_title)
+#
+# get_lxml()
 
-print(str1.index(str2))
-print(str1.index(str2, 16))
 
+str = [1,2,3,4,5,6,7]
+a = str.pop()
+print(a)
+print(str)
