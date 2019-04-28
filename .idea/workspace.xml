@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff53695f-6a2a-41f5-9ac5-01730c428195" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    <list default="true" id="ff53695f-6a2a-41f5-9ac5-01730c428195" name="Default" comment="增加去除文件名非法字符的代码，确保文件创建成功">
+      <change beforePath="$PROJECT_DIR$/baidutieba.py" beforeDir="false" afterPath="$PROJECT_DIR$/baidutieba.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +16,7 @@
     <SUITE FILE_PATH="coverage/MyPython$unsplash.coverage" NAME="unsplash Coverage Results" MODIFIED="1555990247908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MyPython$unsplash_testnew.coverage" NAME="unsplash_testnew Coverage Results" MODIFIED="1555999614875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MyPython$unsplash_test.coverage" NAME="unsplash_test Coverage Results" MODIFIED="1556005606428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MyPython$baidutieba.coverage" NAME="baidutieba Coverage Results" MODIFIED="1556440132599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MyPython$baidutieba.coverage" NAME="baidutieba Coverage Results" MODIFIED="1556442511212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baidutieba.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="baidutieba.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/baidutieba.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1449">
-              <caret line="78" column="35" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="35" />
+            <state relative-caret-position="253">
+              <caret line="98" column="72" lean-forward="true" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="34" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="277" column="11" selection-start-line="277" selection-start-column="11" selection-end-line="277" selection-end-column="11" />
+            <state relative-caret-position="320">
+              <caret line="280" lean-forward="true" selection-start-line="280" selection-end-line="280" />
             </state>
           </provider>
         </entry>
@@ -92,8 +92,8 @@
         <option value="$PROJECT_DIR$/unsplash.py" />
         <option value="$PROJECT_DIR$/unsplash_testnew.py" />
         <option value="$PROJECT_DIR$/unsplash_test.py" />
-        <option value="$PROJECT_DIR$/baidutieba.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/baidutieba.py" />
       </list>
     </option>
   </component>
@@ -150,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.baidutieba">
     <configuration name="baidutieba" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MyPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -255,8 +255,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.baidutieba" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.unsplash_test" />
         <item itemvalue="Python.unsplash_testnew" />
         <item itemvalue="Python.unsplash" />
@@ -281,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556439806688</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加去除文件名非法字符的代码，确保文件创建成功">
+      <created>1556441507550</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556441507550</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -289,11 +296,11 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50065106" side_tool="true" weight="0.29834256" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29834256" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49934897" visible="true" weight="0.29834256" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22526042" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -319,7 +326,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="11" />
-    <option name="LAST_COMMIT_MESSAGE" value="11" />
+    <MESSAGE value="增加去除文件名非法字符的代码，确保文件创建成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加去除文件名非法字符的代码，确保文件创建成功" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -473,20 +481,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baidutieba.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="78" column="35" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="320">
+          <caret line="280" lean-forward="true" selection-start-line="280" selection-end-line="280" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/baidutieba.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="277" column="11" selection-start-line="277" selection-start-column="11" selection-end-line="277" selection-end-column="11" />
+        <state relative-caret-position="253">
+          <caret line="98" column="72" lean-forward="true" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

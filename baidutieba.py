@@ -21,7 +21,6 @@ class BeautifulPicture():
 
     def mkdir(self, path):      # 创建目录
         path = path.strip()     # 去掉前后空格
-        path = re.sub('[\/:*?"<>|]', '', path)      # 去掉文件名的非法字符
         isExists = os.path.exists(path)
         if not isExists:
             os.makedirs(path)
@@ -87,13 +86,14 @@ class BeautifulPicture():
                 tiezi_url = tiezi_url.split('\n')[0]        # 去掉地址中的换行符
                 print('开始网页%s的get请求' % tiezi_url)
                 try:
-                    re = self.request(tiezi_url)
+                    resp = self.request(tiezi_url)
                 except TimeoutException:
                     print("%s请求失败" % tiezi_url)
                 else:
                     print('开始获取帖子标题......')
-                    soup = BeautifulSoup(re.text, 'lxml')
+                    soup = BeautifulSoup(resp.text, 'lxml')
                     img_title = soup.find('h1', class_='core_title_txt')['title']
+                    img_title = re.sub('[\/:*?"<>|]', '', img_title)      # 去掉作为文件名不允许的非法字符
                     print("获取帖子标题：%s" % img_title)
                     # 以该帖子标题作为该帖子中图片的存储目录名
                     pic_path = os.path.join(self.folder_path, img_title)
