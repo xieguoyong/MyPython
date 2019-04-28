@@ -4,6 +4,7 @@ from selenium import webdriver  # 导入Selenium的webdriver
 from selenium.common.exceptions import TimeoutException
 import os
 import time
+import re
 
 
 class BeautifulPicture():
@@ -19,7 +20,8 @@ class BeautifulPicture():
         return r
 
     def mkdir(self, path):      # 创建目录
-        path = path.strip()
+        path = path.strip()     # 去掉前后空格
+        path = re.sub('[\/:*?"<>|]', '', path)      # 去掉文件名的非法字符
         isExists = os.path.exists(path)
         if not isExists:
             os.makedirs(path)

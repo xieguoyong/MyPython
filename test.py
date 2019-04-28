@@ -265,8 +265,16 @@
 #
 # get_lxml()
 
+#
+# str = [1,2,3,4,5,6,7]
+# a = str.pop()
+# print(a)
+# print(str)
 
-str = [1,2,3,4,5,6,7]
-a = str.pop()
-print(a)
-print(str)
+import re
+
+path = 'E:\\PycharmProjects\\picture\\▼SonYoonJoo▲180530"?*&^<>\资源_2018 "Summer in Guam"系列合集！！'
+
+fileName = re.sub('[\/:*?"<>|]', '', path) # 去掉非法字符
+print(path)
+print(fileName)
