@@ -24,10 +24,11 @@ class BeautifulPicture():
         isExists = os.path.exists(path)
         if not isExists:
             os.makedirs(path)
-            os.chdir(path)
-            print('创建并切换至文文件夹%s' % path)
+            print('创建文件夹%s' % path)
+            os.chdir(path)      # 切换至创建的文件夹
         else:
             print('%s的文件夹已经存在,不用再创建了!' % path)
+            os.chdir(path)      # 切换至已有的文件夹
 
     def get_files(self, path):      # 获取所有图片的图片名
         pic_names = os.listdir(path)
